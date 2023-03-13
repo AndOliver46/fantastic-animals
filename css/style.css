@@ -118,6 +118,10 @@ body {
   background: #faf6ed;
 }
 
+.animais-lista li {
+  cursor: pointer;
+}
+
 .animais-descricao {
   grid-column: 3;
 }
@@ -141,7 +145,7 @@ body {
 .faq-lista dt::before {
   content: "";
   display: inline-block;
-  width: 20px;
+  width: 10px;
   height: 10px;
   margin-right: 10px;
   background: #fb5;
@@ -217,4 +221,69 @@ body {
   .copy {
     margin-bottom: 0px;
   }
+}
+
+.js .js-tabcontent section {
+  display: none;
+}
+
+.js-tabcontent section.ativo {
+  display: block !important;
+  animation: show .5s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.js .js-accordion {
+  cursor: pointer;
+}
+
+.js .js-accordion dt:hover::before {
+  content: "";
+  width: 20px;
+}
+
+.js .js-accordion dt.ativo::before {
+  content: "";
+  width: 20px;
+}
+
+.js .js-accordion dd {
+  display: none;
+}
+
+.js .js-accordion dd.ativo {
+  display: block;
+  animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0px;
+  }
+  to {
+    opacity: 1;
+    max-height: 400px;
+  }
+}
+
+.js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+}
+
+.js .js-scroll.ativo{
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: .3s;
 }

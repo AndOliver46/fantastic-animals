@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animais fantásticos</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
-    <nav class="menu">
+    <nav class="menu azul js-menu">
         <ul>
             <li><a href="#animais">Animais</a></li>
             <li><a href="#faq">FAQ</a></li>
@@ -19,9 +20,9 @@
         </ul>
     </nav>
 
-    <section class="grid-section animais" id="animais">
+    <section class="grid-section animais js-scroll" id="animais">
         <h1 class="titulo">Animais Fantásticos</h1>
-        <ul class="animais-lista">
+        <ul class="animais-lista js-tabmenu">
             <li><img src="img/imagem1.jpg"></li>
             <li><img src="img/imagem2.jpg"></li>
             <li><img src="img/imagem3.jpg"></li>
@@ -29,8 +30,8 @@
             <li><img src="img/imagem5.jpg"></li>
             <li><img src="img/imagem6.jpg"></li>
         </ul>
-        <div class="animais-descricao">
-            <section>
+        <div class="animais-descricao js-tabcontent">
+            <section class="ativo">
                 <h2>Raposa</h2>
                 <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados
                     por um focinho comprido e uma cauda longa e peluda.</p>
@@ -87,11 +88,11 @@
         </div>
     </section>
 
-    <section class="grid-section faq" id="faq">
+    <section class="grid-section faq js-scroll" id="faq">
         <h1 class="titulo">FAQ</h1>
-        <dl class="faq-lista">
-            <dt>Qual a idade dos animais?</dt>
-            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, odit.</dd>
+        <dl class="faq-lista js-accordion">
+            <dt class="ativo">Qual a idade dos animais?</dt>
+            <dd class="ativo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, odit.</dd>
             <dt>Eles são fantásticos?</dt>
             <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima facere consequatur distinctio corporis voluptatibus officia voluptates nihil! Nobis eum laudantium cumque, repudiandae odit pariatur quod.</dd>
             <dt>Qual a diferença?</dt>
@@ -101,7 +102,7 @@
         </dl>
     </section>
 
-    <section class="grid-section contato" id="contato">
+    <section class="grid-section contato js-scroll" id="contato">
         <h1 class="titulo">Contato</h1>
         <div class="mapa">
             <img src="img/mapa.png">
